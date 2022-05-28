@@ -67,10 +67,6 @@ def _preprocess_data(data):
         df_clean[column_name] = [value if value > min_threshold  else df_clean[column_name].mean() for value in df_clean[column_name]  ]
     
         return df_clean
-<<<<<<< HEAD
-
-=======
->>>>>>> 0dfd74203727402e7003086fb9123dbce7e36699
     df_train_clean = df_train_clean.drop(['Valencia_wind_deg', 'Seville_pressure'], axis=1)
 
     df_test_clean = df_test_clean.drop(['Valencia_wind_deg', 'Seville_pressure'], axis=1)
@@ -212,7 +208,7 @@ def _preprocess_data(data):
        
     # ------------------------------------------------------------------------
 
-         return df_train_clean
+    return df_train_clean
 
     def load_model(path_to_model:str):
      """Adapter function to load our pretrained model into memory.
