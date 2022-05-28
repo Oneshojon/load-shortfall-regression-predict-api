@@ -185,13 +185,9 @@ def _preprocess_data(data):
         df_train_clean.head(1)
 
     df_train_clean =  df_train_clean[[#'time', 
-            #'Year', 
-<<<<<<< HEAD
-            'Month', 'Day', 'Day_date',\ 
-=======
-            'Month', 'Day', 'Day_date', 
->>>>>>> 0dfd74203727402e7003086fb9123dbce7e36699
-            #'Madrid_wind_speed',
+        #'Year', 
+        'Month', 'Day', 'Day_date',
+        #'Madrid_wind_speed',
         #'Bilbao_rain_1h', 'Valencia_wind_speed', 'Seville_humidity',
         #'Madrid_humidity', 'Bilbao_clouds_all', 'Bilbao_wind_speed',
         #'Seville_clouds_all', 'Bilbao_wind_deg', 'Barcelona_wind_speed',
@@ -205,32 +201,21 @@ def _preprocess_data(data):
         #'Seville_temp', 'Valencia_humidity', 'Valencia_temp_min',
         #'Barcelona_temp_max', 'Madrid_temp_max', 'Barcelona_temp',
         #'Bilbao_temp_min', 'Bilbao_temp', 'Barcelona_temp_min',
-<<<<<<< HEAD
-        #'Bilbao_temp_max', 'Seville_temp_min', 'Madrid_temp', 'Madrid_temp_min',\
-        'spain_wind_speed', #'spain_rain_1h',\
-        'spain_humidity',\
-        'spain_clouds_all', 'spain_wind_deg',\
-        'spain_pressure', 'spain_snow_3h', 'spain_weather_id', #'spain_temp_max',\
-        #'spain_temp_min', 
-        'spain_temp', 'spain_rain_3h', 'load_shortfall_3h',]]
-
-=======
         #'Bilbao_temp_max', 'Seville_temp_min', 'Madrid_temp', 'Madrid_temp_min',
         'spain_wind_speed', #'spain_rain_1h',
         'spain_humidity', 
-            'spain_clouds_all', 'spain_wind_deg',
+        'spain_clouds_all', 'spain_wind_deg',
         'spain_pressure', 'spain_snow_3h', 'spain_weather_id', #'spain_temp_max',
         #'spain_temp_min', 
-            'spain_temp', 'spain_rain_3h', 'load_shortfall_3h',]]
-    for col in df_train_clean.columns:
-        normalise(df_train_clean,col)
->>>>>>> 0dfd74203727402e7003086fb9123dbce7e36699
+        'spain_temp', 'spain_rain_3h', 'load_shortfall_3h',]]
+    
+       
     # ------------------------------------------------------------------------
 
-    return df_train_clean
+         return df_train_clean
 
-def load_model(path_to_model:str):
-    """Adapter function to load our pretrained model into memory.
+    def load_model(path_to_model:str):
+     """Adapter function to load our pretrained model into memory.
 
     Parameters
     ----------
