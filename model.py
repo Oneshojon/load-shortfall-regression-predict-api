@@ -58,16 +58,7 @@ def _preprocess_data(data):
     # ---------------------------------------------------------------
 
     # ----------- Replace this code with your own preprocessing steps --------
-    def normalise(df_clean,column_name):
-    # your code here
-        max_threshold = df_clean[column_name].quantile(0.95)
-        min_threshold = df_clean[column_name].quantile(0.05)
-    
-        df_clean[column_name] = [value if value < max_threshold  else df_clean[column_name].mean() for value in df_clean[column_name]  ]
-        df_clean[column_name] = [value if value > min_threshold  else df_clean[column_name].mean() for value in df_clean[column_name]  ]
-    
-        return df_clean
-    df_train_clean = df_train_clean.drop(['Valencia_wind_deg', 'Seville_pressure'], axis=1)
+    df_train_clean = data.drop(['Valencia_wind_deg', 'Seville_pressure'], axis=1)
 
     df_test_clean = df_test_clean.drop(['Valencia_wind_deg', 'Seville_pressure'], axis=1)
 
