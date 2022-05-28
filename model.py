@@ -210,8 +210,10 @@ def _preprocess_data(data):
 
     return df_train_clean
 
-    def load_model(path_to_model:str):
-     """Adapter function to load our pretrained model into memory.
+def load_model(path_to_model:str):
+    
+
+    """Adapter function to load our pretrained model into memory.
 
     Parameters
     ----------
@@ -227,7 +229,6 @@ def _preprocess_data(data):
 
     """
     return pickle.load(open(path_to_model, 'rb'))
-
 
 """ You may use this section (above the make_prediction function) of the python script to implement 
     any auxiliary functions required to process your model's artifacts.
