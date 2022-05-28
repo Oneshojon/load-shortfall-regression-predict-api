@@ -183,7 +183,7 @@ def _preprocess_data(data):
 
     df_train_clean =  df_train_clean[[#'time', 
             #'Year', 
-            'Month', 'Day', 'Day_date', 
+            'Month', 'Day', 'Day_date',\ 
             #'Madrid_wind_speed',
         #'Bilbao_rain_1h', 'Valencia_wind_speed', 'Seville_humidity',
         #'Madrid_humidity', 'Bilbao_clouds_all', 'Bilbao_wind_speed',
@@ -198,13 +198,13 @@ def _preprocess_data(data):
         #'Seville_temp', 'Valencia_humidity', 'Valencia_temp_min',
         #'Barcelona_temp_max', 'Madrid_temp_max', 'Barcelona_temp',
         #'Bilbao_temp_min', 'Bilbao_temp', 'Barcelona_temp_min',
-        #'Bilbao_temp_max', 'Seville_temp_min', 'Madrid_temp', 'Madrid_temp_min',
-        'spain_wind_speed', #'spain_rain_1h',
-        'spain_humidity', 
-            'spain_clouds_all', 'spain_wind_deg',
-        'spain_pressure', 'spain_snow_3h', 'spain_weather_id', #'spain_temp_max',
+        #'Bilbao_temp_max', 'Seville_temp_min', 'Madrid_temp', 'Madrid_temp_min',\
+        'spain_wind_speed', #'spain_rain_1h',\
+        'spain_humidity',\
+        'spain_clouds_all', 'spain_wind_deg',\
+        'spain_pressure', 'spain_snow_3h', 'spain_weather_id', #'spain_temp_max',\
         #'spain_temp_min', 
-            'spain_temp', 'spain_rain_3h', 'load_shortfall_3h',]]
+        'spain_temp', 'spain_rain_3h', 'load_shortfall_3h',]]
 
     # ------------------------------------------------------------------------
 
